@@ -27,7 +27,7 @@ header{
 }
 
 header svg{
-    max-width:90%;
+    width:90%;
 }
 
 header ul{
@@ -82,6 +82,27 @@ header a:hover{
     }
 }
 
+
+@media screen and (max-width: 577px){
+    header{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    header ul li{
+        display: none;
+    }
+
+    header ul li:last-child,
+    header ul li:nth-child(4){
+        display: inline-block;
+    }
+
+    #logo{
+        width: 30%;
+    }
+}
+
+
 /*--------------HERO------------------*/
 
 
@@ -93,20 +114,17 @@ header a:hover{
     border-bottom: 1px solid black;
 }
 
-.hero div{
+#stayCurious{
     display: flex;
     flex-direction: column;
-}
-
-#stayCurious{
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 50%;
+    width: 50%;
     padding: 6rem 0rem 6rem 0rem;
 }
 
 #lettereM{
-    max-width: 50%;
+    width: 50%;
 }
 
 h1{
@@ -128,16 +146,36 @@ h1{
 @media screen and (max-width: 769px){
     .hero{
         padding-left: 0px;
+        justify-content: flex-start;
     }
 
     #stayCurious{
-        width: 80vw;
-        border: 1px solid black;
+        padding: 5rem 1rem 5rem 3rem;
+        width: 60%;
+
     }
 
     #lettereM{
-        width: 20vw;
-        border: 1px solid black;
+        width: 40%;
+    }
+
+    #stayCurious p{
+        padding-right: 2rem;
+    }
+
+    #stayCurious h1{
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 577px){
+    #stayCurious{
+        padding: 5rem 1rem 5rem 2rem;
+        width: 100%;
+    }
+
+    #lettereM{
+        display: none;
     }
 }
 
@@ -231,6 +269,28 @@ main > hr{
     border-top: 1px solid #E8E8E8;
 }
 
+@media screen and (max-width: 769px){
+    .articles{
+        padding: 2.5rem 2rem 0rem 2rem;
+    }
+
+    .box-articles > div{
+        flex-basis: 45%;
+        margin-right: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 577px){
+    .articles{
+        padding: 2.5rem 2rem 0rem 2rem;
+    }
+
+    .box-articles > div{
+        flex-basis: 100%;
+        margin-right: 2rem;
+    }
+}
 
 /*--------------------OTHER ARTICLES-------------------*/
 
@@ -394,3 +454,44 @@ aside hr{
     color: black;
 }
 
+
+@media screen and (max-width: 769px){
+    .other-articles{
+        padding: 2rem 2rem 0 2rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    aside{
+        width: 100%;
+        position:static;
+        padding-left: 0;
+    }
+
+    .category{
+        padding-right: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 577px){
+    .other-articles{
+        padding: 2rem 0 0 1rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    aside{
+        width: 100%;
+        position:static;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .category{
+        padding-right: 0;
+    }
+
+
+}
