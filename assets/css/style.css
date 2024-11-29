@@ -9,3 +9,388 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #191919;
 }
+
+.container{
+    padding-bottom: 2rem;
+}
+
+header{
+    background-color: #ffc017;
+    display: flex;
+    padding: 1rem 9rem 1rem 9rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+header svg{
+    max-width:90%;
+}
+
+header ul{
+    margin: 0;
+}
+
+header ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 1.7rem;
+}
+
+header a{
+    text-decoration: none;
+    color: #191919;
+    font-size: 0.8rem;
+    font-weight:300;
+}
+
+header button,
+.hero button{
+    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header button:hover,
+.hero button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+header a:hover{
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    header ul li{
+        margin-right: 1.2rem;
+    }
+
+    #logo{
+        width: 30%;
+    }
+}
+
+/*--------------HERO------------------*/
+
+
+.hero{
+    background-color: #ffc017;
+    padding-left: 9rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.hero div{
+    display: flex;
+    flex-direction: column;
+}
+
+#stayCurious{
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 50%;
+    padding: 6rem 0rem 6rem 0rem;
+}
+
+#lettereM{
+    max-width: 50%;
+}
+
+h1{
+    margin: 0;
+    line-height: 1;
+    font-family: 'Spectral', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: -5px;
+}
+
+#stayCurious p{
+    margin-bottom: 2rem;
+    font-weight: 400;
+    padding-right: 5rem;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 769px){
+    .hero{
+        padding-left: 0px;
+    }
+
+    #stayCurious{
+        width: 80vw;
+        border: 1px solid black;
+    }
+
+    #lettereM{
+        width: 20vw;
+        border: 1px solid black;
+    }
+}
+
+/*--------------------ARTICLES-------------------*/
+/* TODO: sistemare stelline e centrare numeri */
+
+.articles{
+    padding: 2.5rem 9rem 0rem 9rem;
+}
+
+.first-row{
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.first-row p,
+.articles h2,
+.articles p,
+.articles h4{
+    margin: 0;
+}
+
+.box-articles .number{
+    margin-right: 1rem;
+    color: #E6E6E6;
+}
+
+.box-articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-articles > div{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.box-articles .article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.box-articles .article > div{
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.box-articles img{
+    height: 100%;
+}
+
+.imgAuthor{
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+#first .imgAuthor{
+    border-radius: 20px;
+}
+
+.box-articles h4{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.box-articles .data{
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    color: #909090;
+}
+
+.box-articles .data svg{
+    vertical-align: middle;
+}
+
+main > hr{
+    border: none;
+    border-top: 1px solid #E8E8E8;
+}
+
+
+/*--------------------OTHER ARTICLES-------------------*/
+
+.other-articles{
+    display:flex;
+    padding: 2rem 9rem 0 9rem;
+    font-size: 0.7rem;
+}
+
+.other-articles article{
+    flex-basis: 60%;
+}
+
+.other-articles aside{
+    flex-basis: 40%;
+}
+
+.other-articles .author img{
+    height: 100%;
+}
+
+.other-articles .author span{
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+}
+
+.other-articles article > div{
+    display: flex;
+    align-items: stretch;
+    margin-top: 1rem;
+}
+
+.other-articles .article p,
+.other-articles .article h2{
+    margin: 0;
+}
+
+.other-articles .article > h2{
+    margin-top: 0.5rem;
+}
+
+.other-articles .article > p{
+    margin-top: 0.3rem;
+}   
+
+.descr{
+    font-size: 0.8rem;
+    color: #909090;
+}
+
+.other-articles .article{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+}
+
+.imgArticles{
+    display: flex;
+    flex-basis: 35%;
+    overflow: hidden;
+    padding: 0.3rem 1rem 1rem 1rem;
+}
+
+.imgArticles img{
+    width: 100%;
+    height: auto;
+}
+
+.last-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top:0.5rem;
+}
+
+.last-row p,
+.last-row svg{
+    display: flex;
+    align-items: center;
+}
+
+.descr.data .button{
+    background-color: #F2F2F2;
+    padding: 0.3rem;
+    border-radius: 15px;
+}
+
+.descr.data svg{
+    vertical-align: middle;
+    margin-left: 0.3rem;
+}
+
+.descr.data p{
+    margin-top: 0rem;
+}
+
+.other-articles .article{
+    padding-right: 1rem;
+}
+
+
+/* ---------------ASIDE----------------- */
+
+aside{
+    padding-left:5rem;
+    position: sticky;
+    top: 100px;
+    height: 500px;
+}
+
+aside h4{
+    font-size: 0.8rem;
+}
+
+.category{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.category button{
+    background-color: white;
+    color: #818181;
+    border: 1px solid #E8E8E8;
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+aside hr{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-top: 1px solid #E8E8E8;
+}
+
+.badge{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.badge a{
+    margin-right: 1.5rem;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    color: #818181;
+    font-size: 0.8rem;
+}
+
+.badge a:hover{
+    color: black;
+}
+
+.category button:hover{
+    border-color: black;
+    color: black;
+}
+
